@@ -1,13 +1,13 @@
 import { ContainerFooter, InfoFooter } from "./styles";
-
+import { Link } from "react-router-dom";
 export function FooterComponent() {
   return (
     <ContainerFooter>
-      <div style={{display:"flex", gap:"1rem"}}>
-        <a href="">HOME</a>
-        <a href="">SOBRE</a>
-        <a href="">CONTATO</a>
-        <a href="">FILIE-SE</a>
+      <div style={{ display: "flex", gap: "1rem" }}>
+        <Link to="/">HOME</Link>
+        <Link to="/sobre">SOBRE</Link>
+        <Link to="#">CONTATO</Link>
+        <Link to="#">FILIE-SE</Link>
       </div>
       <InfoFooter>
         <span>
@@ -17,7 +17,7 @@ export function FooterComponent() {
         |
         <span>
           <i class="fa-solid fa-envelope"></i>
-          <span >clube_engenharia@email.com</span>
+          <span>clube_engenharia@email.com</span>
         </span>
       </InfoFooter>
       <div>© 2023 Seu Site</div>

@@ -2,6 +2,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { HeaderComponent } from "../../components/Header";
 import { Container, Content, StyleBreadcrumb, Title } from "./styles";
 import { FooterComponent } from "../../components/Footer";
+import {NavLink} from 'react-router-dom'
 
 export function SobrePage() {
   return (
@@ -9,7 +10,7 @@ export function SobrePage() {
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item active>Sobre</Breadcrumb.Item>
         </StyleBreadcrumb>
 

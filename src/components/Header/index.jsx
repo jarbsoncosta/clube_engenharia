@@ -31,9 +31,9 @@ export function HeaderComponent() {
 
             <NavLink to="/sobre">SOBRE</NavLink>
 
-            <NavLink to="/">CONTATO</NavLink>
+            <NavLink to="#">CONTATO</NavLink>
 
-            <NavLink to="/">FILIE-SE</NavLink>
+            <NavLink to="#">FILIE-SE</NavLink>
           </div>
         </div>
       </Header>
