@@ -21,7 +21,7 @@ body{
 }
 :focus{
 outline: 0;
-box-shadow: 0 0 0 1px ${(props) => props.theme["blue"]};
+box-shadow: none;
 border: 0;
 }
 
