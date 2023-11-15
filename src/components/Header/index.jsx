@@ -31,7 +31,7 @@ export function HeaderComponent() {
 
             <NavLink to="/sobre">SOBRE</NavLink>
 
-            <NavLink to="#">CONTATO</NavLink>
+            <NavLink to="/contato">CONTATO</NavLink>
 
             <NavLink to="#">FILIE-SE</NavLink>
           </div>
