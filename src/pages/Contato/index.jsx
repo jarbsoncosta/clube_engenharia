@@ -19,6 +19,8 @@ export function ContatoPage() {
     message: "",
   });
 
+  console.log(formData)
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -41,7 +43,7 @@ export function ContatoPage() {
         </StyleBreadcrumb>
 
         <Title>
-          <i class="fa-solid fa-shop"></i>
+        <i class="fa-solid fa-envelope"></i>
           <strong>CONTATO</strong>
         </Title>
 

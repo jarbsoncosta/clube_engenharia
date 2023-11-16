@@ -18,6 +18,10 @@ export const Content = styled.div`
     text-decoration: none;
     font-weight: 500;
   }
+  @media (max-width: 1215px) {
+    width: 100%;
+   
+}
 `;
 export const StyleBreadcrumb = styled(Breadcrumb)`
 width: 100%;
@@ -73,7 +77,7 @@ input, textarea{
 export const ContentButton = styled.div`
 width: 100%;
 display: flex;
-
+margin-bottom: 2rem;
 justify-content: right;
   button{
     padding: 0.5rem 1.5rem;
