@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
 export const Container = styled.div`
   display: flex;
-  margin-top: 1rem;
+  margin: 1rem 0 5rem 0;
 `;
 
 export const ContentCards = styled.div`

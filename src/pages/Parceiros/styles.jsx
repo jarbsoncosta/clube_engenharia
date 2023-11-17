@@ -49,7 +49,7 @@ export const ContentCards = styled.div`
 display: flex;
 flex-wrap: wrap;
 align-items: center;  
-margin: 2rem 0;
+margin: 2rem 0 5rem 0;
 gap: 2rem;
 `;
 export const Card = styled.div`

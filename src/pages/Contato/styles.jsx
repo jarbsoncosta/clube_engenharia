@@ -52,6 +52,7 @@ width: 31.25rem;
 display: flex;
 flex-direction: column;
 gap: 0.9rem;
+margin: 0 0 5rem 0;
   
 `;
 export const InputGroup = styled.div`
