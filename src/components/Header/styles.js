@@ -17,6 +17,9 @@ export const Header = styled.div`
     margin-top: -2.5rem;
     position: relative;
     width: 140px;
+    @media (max-width: 590px) {
+    display: none;
+  }
   }
 
   .nav {

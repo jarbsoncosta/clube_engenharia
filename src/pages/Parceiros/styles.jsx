@@ -6,10 +6,9 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   min-height: 100vh;
- 
 `;
 export const Content = styled.div`
-   width: 71.25rem;
+  width: 71.25rem;
   margin: 0 auto; /* Centraliza o conteúdo */
   display: flex;
   flex-direction: column;
@@ -46,26 +45,23 @@ export const Title = styled.div`
 `;
 
 export const ContentCards = styled.div`
-display: flex;
-flex-wrap: wrap;
-align-items: center;  
-margin: 2rem 0 5rem 0;
-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem 0 5rem 0;
+  gap: 2rem;
+
+  @media (max-width: 960px) {
+    justify-content: center;
+  }
 `;
 export const Card = styled.div`
-
-  img{
-    border-top-right-radius: 10px ;
-    border-top-left-radius: 10px ;
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     width: 150px;
     border-radius: 100%;
     object-fit: cover;
     cursor: pointer;
   }
-
-  
-
- 
 `;
-
-
