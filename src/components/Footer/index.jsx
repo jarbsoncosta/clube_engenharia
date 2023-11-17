@@ -7,7 +7,7 @@ export function FooterComponent() {
         <Link to="/">HOME</Link>
         <Link to="/sobre">SOBRE</Link>
         <Link to="#">CONTATO</Link>
-        <Link to="#">FILIE-SE</Link>
+        <Link to="#"> ASSOCIE-SE</Link>
       </div>
       <InfoFooter>
         <span>
@@ -20,7 +20,7 @@ export function FooterComponent() {
           <span>clube_engenharia@email.com</span>
         </span>
       </InfoFooter>
-      <div>© 2023 Seu Site</div>
+      <div>© 2023 Clube de engenharia do RN</div>
     </ContainerFooter>
   );
 }

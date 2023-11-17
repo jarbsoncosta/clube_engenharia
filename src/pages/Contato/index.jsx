@@ -38,7 +38,7 @@ export function ContatoPage() {
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item  href="/"> <i class="fa-solid fa-house"></i> Início</Breadcrumb.Item>
           <Breadcrumb.Item active>Contato</Breadcrumb.Item>
         </StyleBreadcrumb>
 
@@ -89,6 +89,7 @@ export function ContatoPage() {
           </ContentButton>
         </FormContato>
       </Content>
+      
       <FooterComponent />
     </Container>
   );

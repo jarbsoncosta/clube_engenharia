@@ -9,7 +9,7 @@ export function SobrePage() {
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/"> <i class="fa-solid fa-house"></i> Início</Breadcrumb.Item>
           <Breadcrumb.Item active>Sobre</Breadcrumb.Item>
         </StyleBreadcrumb>
 

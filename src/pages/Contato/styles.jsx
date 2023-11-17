@@ -9,7 +9,7 @@ export const Container = styled.div`
  
 `;
 export const Content = styled.div`
-  width: 75rem;
+  width: 71.25rem;
   margin: 0 auto; /* Centraliza o conteúdo */
   display: flex;
   flex-direction: column;
@@ -92,5 +92,4 @@ justify-content: right;
     }
   }
 `;
-
 

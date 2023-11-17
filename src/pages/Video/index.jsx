@@ -48,18 +48,20 @@ export function VideosPage() {
     setData(props);
     setModalShow(true);
   }
+
+  
   return (
     <Container>
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item active>Videos</Breadcrumb.Item>
+          <Breadcrumb.Item href="/"> <i class="fa-solid fa-house"></i> Início</Breadcrumb.Item>
+          <Breadcrumb.Item active>Tutoriais</Breadcrumb.Item>
         </StyleBreadcrumb>
 
         <Title>
           <i className="fa-solid fa-video"></i>
-          <strong>VIDEOS </strong>
+          <strong>TUTORIAIS </strong>
         </Title>
         <p>
           Aqui você pode encontrar videos de enumeras atividades nas mais

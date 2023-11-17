@@ -7,20 +7,25 @@ export function CardsComponents() {
       <ContentCards>
         <Card to="/videos">
           <i className="fa-solid fa-chalkboard-user"></i>
-          VIDEOS
+          TUTORIAIS
         </Card>
         <Card to="/">
           <i className="fa-solid fa-list-ul"></i>
           LICITAÇÕES
         </Card>
-        <Card to="/">
-          <i className="fa-solid fa-users-viewfinder"></i>
+        <Card to="/parceiros">
+        <i class="fa-solid fa-users-gear"></i>
           PARCEIROS
         </Card>
         <Card to="/">
           <i className="fa-solid fa-user-tie"></i>
-          FILIE-SE
+          ASSOCIE-SE
+         
         </Card>
+        {/* <Card to="/">
+          <i className="fa-solid fa-user-tie"></i>
+          FILIE-SE
+        </Card> */}
       </ContentCards>
     </Container>
   );

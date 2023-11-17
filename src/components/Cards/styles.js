@@ -8,11 +8,12 @@ export const Container = styled.div`
 export const ContentCards = styled.div`
   margin: 0 auto;
   display: flex;
+  width: 71.25rem;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   padding: 2rem 0 0 0;
-`;
+  `;
 
 export const Card = styled(NavLink)`
   width: 13rem;

@@ -101,3 +101,9 @@ export const ButtonCloseModal = styled.button`
       background-color:  ${(props) => props.theme["blue-black"]};
     }
 `;
+
+
+
+
+
+

@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   display: flex;
- 
 `;
 
 export const Header = styled.div`
@@ -29,6 +28,32 @@ export const Header = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
+    .link-associe {
+      background-color: #fbbf24;
+      padding: 0.3rem 1rem;
+      border-radius: 4px;
+      color: #0f172a;
+      border: none;
+      font-weight: 500;
+      transition: 1s;
+      animation: pulse 1.7s infinite;
+      &:hover {
+        color: #0f172a;
+        background-color: #f59e0b;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
   }
   .nav-items a {
     font-size: 1rem;

@@ -1,6 +1,6 @@
 import { Container, Header, TopHeader } from "./styles";
 import Logo from "../../assets/logo.png";
-import {NavLink} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 export function HeaderComponent() {
   return (
@@ -27,13 +27,15 @@ export function HeaderComponent() {
             <img src={Logo} alt="" />
           </NavLink>
           <div className="nav-items">
-            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/">INÍCIO</NavLink>
 
             <NavLink to="/sobre">SOBRE</NavLink>
 
             <NavLink to="/contato">CONTATO</NavLink>
 
-            <NavLink to="#">FILIE-SE</NavLink>
+            <NavLink className="link-associe" style={{ border: "none" }} to="#">
+              ASSOCIE-SE
+            </NavLink>
           </div>
         </div>
       </Header>
