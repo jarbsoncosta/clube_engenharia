@@ -14,7 +14,7 @@ export function FooterComponent() {
           <i className="fa-solid fa-phone"></i>
           (84) 3335-0510 / 3335-0157
         </span>{" "}
-        |
+    
         <span>
           <i className="fa-solid fa-envelope"></i>
           <span>clube_engenharia@email.com</span>

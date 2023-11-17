@@ -47,8 +47,9 @@ export function ContatoPage() {
           <strong>CONTATO</strong>
         </Title>
 
-      <p>Envie um mensagem para o Clube de engenharia do RN</p>
+     
         <FormContato onSubmit={handleSubmit}>
+        <p>Envie um mensagem para o Clube de engenharia do RN</p>
           <InputGroup>
             <label htmlFor="name">Nome *</label>
             <input

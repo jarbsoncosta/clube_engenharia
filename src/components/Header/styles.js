@@ -18,7 +18,8 @@ export const Header = styled.div`
     position: relative;
     width: 140px;
     @media (max-width: 590px) {
-    display: none;
+      width: 70px;
+      margin-top: 0;
   }
   }
 
@@ -40,6 +41,7 @@ export const Header = styled.div`
       font-weight: 500;
       transition: 1s;
       animation: pulse 1.7s infinite;
+      margin-right: 1rem;
       &:hover {
         color: #0f172a;
         background-color: #f59e0b;

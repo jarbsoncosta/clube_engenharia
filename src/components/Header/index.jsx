@@ -20,6 +20,7 @@ export function HeaderComponent() {
               <a title="Whatsapp"><i class="ph-fill ph-whatsapp-logo"></i></a>
             </li>
         </ul>  */}
+        
       </TopHeader>
       <Header>
         <div className="nav">

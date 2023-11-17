@@ -30,4 +30,9 @@ export const InfoFooter = styled.div`
     gap: 1rem;
     align-items: center;
   }
+
+  @media (max-width: 550px) {
+     display: block;
+     margin: 10px 0;
+  }
 `;
