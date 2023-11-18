@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   flex-direction: column;
   display: flex;
+
 `;
 
 export const Header = styled.div`
@@ -73,12 +74,55 @@ export const Header = styled.div`
       box-shadow: none;
     }
   }
+
+  @media (max-width: 590px) {
+    display: none;
+  }
 `;
 export const TopHeader = styled.div`
   background: #3980d4 none repeat scroll 0 0;
   display: flex;
-  justify-content: right;
-  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  .link-associe {
+    display: none;
+    align-items: center;
+    font-size: 0.875rem;
+      background-color: #fbbf24;   
+      border-radius: 4px;
+      color: #0f172a;
+      border: none;
+      font-weight: 500;
+      transition: 1s;
+      animation: pulse 1.7s infinite;
+     padding: 0.2rem 1rem;
+     text-decoration: none;
+      &:hover {
+        color: #0f172a;
+        background-color: #f59e0b;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+
+    }
+    @media (max-width: 590px) {
+    padding: 0 1rem;
+    .link-associe{
+      display: flex;
+    }
+  }
 `;
 
 //   .list-icons {

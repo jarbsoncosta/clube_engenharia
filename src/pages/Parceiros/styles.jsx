@@ -60,7 +60,6 @@ export const Card = styled.div`
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     width: 150px;
-    border-radius: 100%;
     object-fit: cover;
     cursor: pointer;
   }

@@ -1,6 +1,7 @@
 import { Container, Header, TopHeader } from "./styles";
 import Logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
+import { HamburgerMenu } from "../HamburgerMenu";
 
 export function HeaderComponent() {
   return (
@@ -20,7 +21,10 @@ export function HeaderComponent() {
               <a title="Whatsapp"><i class="ph-fill ph-whatsapp-logo"></i></a>
             </li>
         </ul>  */}
-        
+        <HamburgerMenu />
+        <NavLink className="link-associe" style={{ border: "none" }} to="#">
+          ASSOCIE-SE
+        </NavLink>
       </TopHeader>
       <Header>
         <div className="nav">
