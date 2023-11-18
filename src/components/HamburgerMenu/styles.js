@@ -7,6 +7,9 @@ display: none;
   cursor: pointer;
   padding: 10px;
   font-size: 20px;
+  i{
+    color: white;
+  }
   @media (max-width: 590px) {
     display: block;
   }

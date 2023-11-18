@@ -57,8 +57,7 @@ export const ContentCards = styled.div`
 `;
 export const Card = styled.div`
   img {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+   border-radius: 100%;
     width: 150px;
     object-fit: cover;
     cursor: pointer;
