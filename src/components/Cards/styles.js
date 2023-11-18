@@ -12,7 +12,7 @@ export const ContentCards = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  padding: 2rem 0 0 0;
+  padding: 2rem ;
   `;
 
 export const Card = styled(NavLink)`
@@ -55,5 +55,10 @@ export const Card = styled(NavLink)`
     100% {
       transform: scale(1);
     }
+  }
+
+  @media (max-width: 590px) {
+    width: 100%;
+    
   }
 `;
