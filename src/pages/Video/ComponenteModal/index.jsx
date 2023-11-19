@@ -1,4 +1,3 @@
-
 import Modal from "react-bootstrap/Modal";
 import { ButtonCloseModal, InfoVideo } from "../styles";
 
@@ -13,15 +12,29 @@ export function ComponenteModal(props) {
       centered
     >
       <Modal.Body>
-        <iframe
-          width="100%"
-          height="707"
-          src={video?.linkVideo}
-          title="5 Razões que me fizeram escolher ser um Engenheiro de estruturas"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            paddingBottom: "56.25%",
+            height: 0,
+          }}
+        >
+          <iframe
+            title={video?.title}
+            src={video?.linkVideo}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              top: 0,
+              left: 0,
+            }}
+          ></iframe>
+        </div>
       </Modal.Body>
       <Modal.Footer>
         <InfoVideo style={{ width: "100%", display: "flex" }}>
