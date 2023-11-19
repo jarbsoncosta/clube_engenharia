@@ -55,18 +55,28 @@ export const CardContent = styled.div`
   border: 1px solid ${(props) => props.theme["gray-200"]};
   img {
     border-radius: 10px;
+    width: 15.5rem ;
     cursor: pointer;
   }
-  background-color:${(props) => props.theme["gray50"]} ;
+  background-color: ${(props) => props.theme["gray50"]};
+  @media (max-width: 650px) {
+     display: block;
+     img{
+      width: 100%
+     }
+  }
 `;
 
 export const InfoVideo = styled.div`
   display: flex;
   flex-direction: column;
   h4 {
-    font-size: 1.5rem;
     color: #334155;
     font-weight: 500;
+  }
+  @media (max-width: 650px) {
+    font-size: 80%;
+    margin-top: 1rem;
   }
 `;
 
@@ -94,16 +104,10 @@ export const ButtonCloseModal = styled.button`
   padding: 0.5rem 1rem;
   border: 0;
   border-radius: 4px;
-  background-color:  ${(props) => props.theme["blue"]};
-    color: white;
-    transition: 1s;
-  &:hover{
-      background-color:  ${(props) => props.theme["blue-black"]};
-    }
+  background-color: ${(props) => props.theme["blue"]};
+  color: white;
+  transition: 1s;
+  &:hover {
+    background-color: ${(props) => props.theme["blue-black"]};
+  }
 `;
-
-
-
-
-
-

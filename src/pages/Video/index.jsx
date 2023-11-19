@@ -49,13 +49,15 @@ export function VideosPage() {
     setModalShow(true);
   }
 
-  
   return (
     <Container>
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="/"> <i class="fa-solid fa-house"></i> Início</Breadcrumb.Item>
+          <Breadcrumb.Item href="/">
+            {" "}
+            <i class="fa-solid fa-house"></i> Início
+          </Breadcrumb.Item>
           <Breadcrumb.Item active>Tutoriais</Breadcrumb.Item>
         </StyleBreadcrumb>
 
@@ -91,8 +93,6 @@ export function VideosPage() {
                 <img
                   onClick={() => videoSelecionado(video)}
                   src={video.imagem}
-                  width={250}
-                  alt=""
                 />
 
                 <InfoVideo>

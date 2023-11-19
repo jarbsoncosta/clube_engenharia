@@ -46,18 +46,19 @@ export const Title = styled.div`
 `;
 
 export const FormContato = styled.form`
-  width: 31.25rem;
+   width: 31.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
   margin: 0 0 5rem 0;
-  
+  @media (max-width: 590px) {
+    width: 100%;
+  }
 `;
 export const InputGroup = styled.div`
   width: 31.25rem;
   display: flex;
   flex-direction: column;
-
   input,
   textarea {
     width: 100%;
@@ -69,6 +70,9 @@ export const InputGroup = styled.div`
       border: 1px solid ${(props) => props.theme["blue"]};
       box-shadow: 0 0 4px ${(props) => props.theme["blue"]};
     }
+  }
+  @media (max-width: 590px) {
+    width: 100%;
   }
 `;
 
