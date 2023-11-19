@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Form, Breadcrumb } from "react-bootstrap";
+import { Form, Breadcrumb, Pagination } from "react-bootstrap";
 
 export const Container = styled.div`
   display: flex;
@@ -55,15 +55,15 @@ export const CardContent = styled.div`
   border: 1px solid ${(props) => props.theme["gray-200"]};
   img {
     border-radius: 10px;
-    width: 15.5rem ;
+    width: 15.5rem;
     cursor: pointer;
   }
   background-color: ${(props) => props.theme["gray50"]};
   @media (max-width: 650px) {
-     display: block;
-     img{
-      width: 100%
-     }
+    display: block;
+    img {
+      width: 100%;
+    }
   }
 `;
 

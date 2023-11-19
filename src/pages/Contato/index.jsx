@@ -11,6 +11,7 @@ import {
 } from "./styles";
 import { FooterComponent } from "../../components/Footer";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function ContatoPage() {
   const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ export function ContatoPage() {
     message: "",
   });
 
-  console.log(formData)
+  console.log(formData);
 
   const handleChange = (e) => {
     setFormData({
@@ -38,18 +39,20 @@ export function ContatoPage() {
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-        <Breadcrumb.Item  href="/"> <i class="fa-solid fa-house"></i> Início</Breadcrumb.Item>
+          <Link to="/">
+            <i class="fa-solid fa-house"></i> Início
+          </Link>
+          <Breadcrumb.Item href="#"> </Breadcrumb.Item>
           <Breadcrumb.Item active>Contato</Breadcrumb.Item>
         </StyleBreadcrumb>
 
         <Title>
-        <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-envelope"></i>
           <strong>CONTATO</strong>
         </Title>
 
-     
         <FormContato onSubmit={handleSubmit}>
-        <p>Envie um mensagem para o Clube de engenharia do RN</p>
+          <p>Envie um mensagem para o Clube de engenharia do RN</p>
           <InputGroup>
             <label htmlFor="name">Nome *</label>
             <input
@@ -90,7 +93,7 @@ export function ContatoPage() {
           </ContentButton>
         </FormContato>
       </Content>
-      
+
       <FooterComponent />
     </Container>
   );

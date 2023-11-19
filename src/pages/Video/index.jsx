@@ -12,8 +12,9 @@ import {
 import { videos } from "./videos";
 import { useState } from "react";
 import { FooterComponent } from "../../components/Footer";
-import { Card, Form, Pagination } from "react-bootstrap";
+import { Pagination } from "react-bootstrap";
 import { ComponenteModal } from "./ComponenteModal";
+import { Link } from "react-router-dom";
 
 export function VideosPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -49,13 +50,15 @@ export function VideosPage() {
     setModalShow(true);
   }
 
-  
   return (
     <Container>
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="/"> <i class="fa-solid fa-house"></i> Início</Breadcrumb.Item>
+        <Link to="/">
+            <i class="fa-solid fa-house"></i> Início
+          </Link>
+          <Breadcrumb.Item href="#"> </Breadcrumb.Item>
           <Breadcrumb.Item active>Tutoriais</Breadcrumb.Item>
         </StyleBreadcrumb>
 

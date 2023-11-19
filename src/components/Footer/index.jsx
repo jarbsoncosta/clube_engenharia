@@ -6,7 +6,7 @@ export function FooterComponent() {
       <div style={{ display: "flex", gap: "1rem" }}>
         <Link to="/">HOME</Link>
         <Link to="/sobre">SOBRE</Link>
-        <Link to="#">CONTATO</Link>
+        <Link to="/contato">CONTATO</Link>
         <Link to="#"> ASSOCIE-SE</Link>
       </div>
       <InfoFooter>

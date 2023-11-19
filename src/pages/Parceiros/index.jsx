@@ -19,10 +19,11 @@ export function ParceirosPage() {
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-          <Breadcrumb.Item href="/">
-            {" "}
+          <Link to="/">
             <i class="fa-solid fa-house"></i> Início
-          </Breadcrumb.Item>
+          </Link>
+          <Breadcrumb.Item href="#"> </Breadcrumb.Item>
+
           <Breadcrumb.Item active>Parceiros</Breadcrumb.Item>
         </StyleBreadcrumb>
 
