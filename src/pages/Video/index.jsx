@@ -55,7 +55,7 @@ export function VideosPage() {
       <HeaderComponent />
       <Content>
         <StyleBreadcrumb>
-        <Link to="/">
+          <Link to="/">
             <i class="fa-solid fa-house"></i> Início
           </Link>
           <Breadcrumb.Item href="#"> </Breadcrumb.Item>

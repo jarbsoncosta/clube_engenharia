@@ -61,5 +61,8 @@ export const Card = styled.div`
     width: 150px;
     object-fit: cover;
     cursor: pointer;
+    @media (max-width: 500px) {
+    width: 100px;
+  }
   }
 `;

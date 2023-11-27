@@ -10,30 +10,41 @@ import {
   Title,
 } from "./styles";
 import { FooterComponent } from "../../components/Footer";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { Spinner } from "react-bootstrap";
 
 export function ContatoPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [isLoading, setIsLoading] = useState(false);
+  // Função para enviar email
+  const form = useRef();
 
-  console.log(formData);
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para lidar com o envio do formulário
-    console.log("Formulário submetido:", formData);
+    setIsLoading(true);
+    emailjs
+      .sendForm(
+        "service_xeb4f2p",
+        "template_6l97j5q",
+        form.current,
+        "P0eyRxEU5kjl2fYcK"
+      )
+      .then(
+        () => {
+          toast.success("Sua mensagem foi enviada com sucesso!");
+          setIsLoading(false);
+          e.target.reset();
+        },
+        (error) => {
+          toast.error("Erro ao enviar mensagem, tente novamente mais tarde!");
+          console.log(error);
+          setIsLoading(false);
+        }
+      );
   };
+
   return (
     <Container>
       <HeaderComponent />
@@ -51,8 +62,18 @@ export function ContatoPage() {
           <strong>CONTATO</strong>
         </Title>
 
-        <FormContato onSubmit={handleSubmit}>
+        <FormContato ref={form} onSubmit={sendEmail}>
           <p>Envie um mensagem para o Clube de engenharia do RN</p>
+          <InputGroup>
+            <label htmlFor="name">Assunto *</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Assunto "
+            />
+          </InputGroup>
           <InputGroup>
             <label htmlFor="name">Nome *</label>
             <input
@@ -61,8 +82,6 @@ export function ContatoPage() {
               name="name"
               required
               placeholder="Nome "
-              value={formData.name}
-              onChange={handleChange}
             />
           </InputGroup>
           <InputGroup>
@@ -73,8 +92,6 @@ export function ContatoPage() {
               id="email"
               name="email"
               required
-              value={formData.email}
-              onChange={handleChange}
             />
           </InputGroup>
           <InputGroup>
@@ -84,12 +101,17 @@ export function ContatoPage() {
               name="message"
               required
               placeholder="Digite aqui sua mensagem"
-              value={formData.message}
-              onChange={handleChange}
             ></textarea>
           </InputGroup>
           <ContentButton>
-            <button type="submit">Enviar</button>
+            {isLoading ? (
+              <button type="submit">
+                {" "}
+                <Spinner style={{width:"25px", height:"25px"}} animation="border" variant="light" />
+              </button>
+            ) : (
+              <button type="submit">Enviar</button>
+            )}
           </ContentButton>
         </FormContato>
       </Content>

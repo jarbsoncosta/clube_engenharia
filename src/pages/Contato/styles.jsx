@@ -82,7 +82,11 @@ export const ContentButton = styled.div`
   margin-bottom: 2rem;
   justify-content: right;
   button {
-    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 3rem;
     border-radius: 5px;
     border: 0;
     background-color: ${(props) => props.theme["blue"]};

@@ -4,6 +4,7 @@ import { Container, Content, StyleBreadcrumb, Title } from "./styles";
 import { FooterComponent } from "../../components/Footer";
 import { Link } from "react-router-dom";
 
+
 export function SobrePage() {
   return (
     <Container>
@@ -37,6 +38,7 @@ export function SobrePage() {
             </p>
           </div>
         </Title>
+       
       </Content>
       <FooterComponent />
     </Container>

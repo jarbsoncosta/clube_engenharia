@@ -8,8 +8,7 @@ import { FooterComponent } from "../../components/Footer";
 import { Container } from "./styles";
 
 export function HomePage() {
-  return (
-       
+  return (       
       <Container>     
          <HeaderComponent /> 
         <Carousel>
@@ -29,7 +28,6 @@ export function HomePage() {
         </Carousel>
         <CardsComponents />
         <FooterComponent />
-      </Container>
-    
+      </Container>    
   );
 }
