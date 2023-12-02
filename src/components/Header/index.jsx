@@ -38,7 +38,7 @@ export function HeaderComponent() {
 
             <NavLink to="/contato">CONTATO</NavLink>
 
-            <NavLink className="link-associe" style={{ border: "none" }} to="#">
+            <NavLink className="link-associe" style={{ border: "none" }} to="/associe-se">
               ASSOCIE-SE
             </NavLink>
           </div>

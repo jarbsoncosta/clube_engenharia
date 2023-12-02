@@ -4,6 +4,7 @@ import { SobrePage } from "../pages/Sobre";
 import { ContatoPage } from "../pages/Contato";
 import { VideosPage } from "../pages/Video";
 import { ParceirosPage } from "../pages/Parceiros";
+import { AssociSePage } from "../pages/AssociSe";
 
 export function Router() {
   return (
@@ -14,6 +15,7 @@ export function Router() {
       <Route path="/videos" element={<VideosPage />}></Route>
 
       <Route path="/parceiros" element={<ParceirosPage />}></Route>
+      <Route path="/associe-se" element={<AssociSePage />}></Route>
       {/* <Route path="/" element={<DefaultLayout />}></Route> */}
     </Routes>
   );

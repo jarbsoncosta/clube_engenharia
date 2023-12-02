@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { Card, Container, ContentCards } from "./styles";
 
 export function CardsComponents() {
@@ -17,7 +16,7 @@ export function CardsComponents() {
         <i class="fa-solid fa-users-gear"></i>
           PARCEIROS
         </Card>
-        <Card to="/">
+        <Card to="/associe-se">
           <i className="fa-solid fa-user-tie"></i>
           ASSOCIE-SE
          

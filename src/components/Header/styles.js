@@ -89,7 +89,7 @@ export const TopHeader = styled.div`
     display: none;
     align-items: center;
     font-size: 0.875rem;
-      background-color: #fbbf24;   
+      background-color:  ${(props) => props.theme["yellow-300"]};   
       border-radius: 4px;
       color: #0f172a;
       border: none;
