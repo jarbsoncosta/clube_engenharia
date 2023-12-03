@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   /* margin: 0 0 5rem 0; */
   /* background: ${(props) => props.theme["gray-100"]}; */
-  padding: 2rem 0;
+  padding: 4rem 0;
 `;
 
 export const ContentCards = styled.div`

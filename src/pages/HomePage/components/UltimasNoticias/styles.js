@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  /* background-color: ${(props) => props.theme["gray50"]}; */
+  background-color: ${(props) => props.theme["gray50"]};
+  
 `;
 
 export const Content = styled.div`
@@ -14,6 +15,7 @@ export const Content = styled.div`
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 2rem;
+  
 `;
 
 export const CardsNoticias = styled.div`
@@ -33,6 +35,7 @@ export const Card = styled.div`
   box-sizing: border-box;
   flex-grow: 1;
   background-color: ${(props) => props.theme["gray-100"]};
+  border: 1px solid #d1d5db;
   img {
     width: 100%;
     height: 20rem;

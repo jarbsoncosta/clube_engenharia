@@ -22,7 +22,7 @@ export function HeaderComponent() {
             </li>
         </ul>  */}
         <HamburgerMenu />
-        <NavLink className="link-associe" style={{ border: "none" }} to="#">
+        <NavLink className="link-associe" style={{ border: "none" }} to="/associe-se">
           ASSOCIE-SE
         </NavLink>
       </TopHeader>
