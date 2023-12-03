@@ -71,7 +71,7 @@ export const InfoVideo = styled.div`
   display: flex;
   flex-direction: column;
   h4 {
-    color: #334155;
+    color: ${(props) => props.theme["blue-black"]};
     font-weight: 500;
   }
   @media (max-width: 650px) {

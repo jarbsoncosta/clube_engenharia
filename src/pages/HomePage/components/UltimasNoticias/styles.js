@@ -69,9 +69,9 @@ export const InfoCard = styled.div`
     border-radius: 5px;
     border: 0;
     font-weight: 500;
+    color: #0f172a;
     &:hover {
-        color: #0f172a;
-        background-color: #f59e0b;
+       background-color: #f59e0b;
       }
   }
 `;

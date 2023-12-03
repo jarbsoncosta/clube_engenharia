@@ -1,63 +1,56 @@
+import { useState } from "react";
+import { ComponenteModalInfoNoticias } from "../../../../components/ModalInfoNoticias";
 import { Card, CardsNoticias, Container, Content, InfoCard } from "./styles";
+import { noticias } from "./noticias";
 
 export function ComponenteUltimasNoticias() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [infoNoticia, setInfoNoticia] = useState(null);
+
+
+  function openModal (data) {
+    setInfoNoticia(data);
+    setModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <Container>
       <Content>
         <h4>ÚLTIMAS NOTÍCIAS</h4>
         <CardsNoticias>
-          <Card>
-            <img
-              style={{ border: "1px solid #d1d5db " }}
-              src="https://blogdaengenharia.com/wp-content/uploads/2023/10/Construmetal-2023-Blog-da-Engenharia0-380x280.webp"
-              alt=""
-            />
-             <InfoCard>
-              <div className="data">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span>02/12/2023</span>
-              </div>
-              <strong>Evento da engenharia</strong>
-              <div>
-                <button>SAIBA MAIS</button>
-              </div>
-            </InfoCard>
-          </Card>
-          <Card>
-            <img
-              style={{ border: "1px solid #d1d5db " }}
-              src="https://www.alamoengenharia.com.br/wp-content/uploads/2020/01/eventos-gestao-de-facilities-alamo-engenharia.jpg"
-              alt=""
-            />
-             <InfoCard>
-              <div className="data">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span>02/12/2023</span>
-              </div>
-              <strong>Evento da engenharia</strong>
-              <div>
-                <button>SAIBA MAIS</button>
-              </div>
-            </InfoCard>
-          </Card>
-          <Card>
-            <img
-              style={{ border: "1px solid #d1d5db " }}
-              src="https://civilizacaoengenheira.files.wordpress.com/2019/02/enece.jpg?w=525"
-              alt=""
-            />
-            <InfoCard>
-              <div className="data">
-                <i class="fa-solid fa-calendar-days"></i>
-                <span>02/12/2023</span>
-              </div>
-              <strong>Evento da engenharia</strong>
-              <div>
-                <button>SAIBA MAIS</button>
-              </div>
-            </InfoCard>
-          </Card>
-          
+          {noticias.map((item) => {
+            return (
+              <Card>
+                <img
+                  style={{ border: "1px solid #d1d5db " }}
+                  src={item?.imagem}
+                  alt=""
+                />
+                <InfoCard>
+                  <div className="data">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>{item?.dataPuplicada}</span>
+                  </div>
+                  <strong>{item?.title} </strong>
+                  <div>
+                    <button onClick={() => openModal (item)}>
+                      SAIBA MAIS
+                    </button>
+                  </div>
+                </InfoCard>
+              </Card>
+            );
+          })}
+
+          <ComponenteModalInfoNoticias
+            isOpen={modalOpen}
+            closeModal={closeModal}
+            data={infoNoticia}
+          />
         </CardsNoticias>
       </Content>
     </Container>
